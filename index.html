@@ -27,7 +27,7 @@
         
       <a-sky color="#ECECEC"></a-sky>
     
-    <a-entity camera look-controls wasd-controls="acceleration:2000" position="0 1.6 57"></a-entity>
+    <a-entity camera look-controls wasd-controls="acceleration:1000" position="0 1.6 57"></a-entity>
        
         
         
@@ -65,7 +65,7 @@
            width="28"  
            position="35 0 15" 
            rotation="-90 0 90"
-           shadow="cast: true"></a-box>
+           shadow="receive: true"></a-box>
         
      <!--- eternal 3D stand ---> 
     <a-box src="#texturestand" 
@@ -326,12 +326,12 @@
         <!--- obsidian 3D ---> 
         
          <a-assets>
-            <a-asset-item id="boxx" src="otest1.gltf" ></a-asset-item>
+            <a-asset-item id="boxx" src="otest4.gltf" ></a-asset-item>
          </a-assets>
 
         <a-entity gltf-model="#boxx" 
                   animation-mixer="clip:" 
-                  position="3 8.4 -10.5" 
+                  position="3 8.4 -14" 
                   shadow="cast: true"
             
             
@@ -378,11 +378,32 @@
                          intensity: 0.2">
          </a-entity>
         
+        <a-entity data-brackets-id="891"   
+                  light="type: point; 
+                         intensity: 3; 
+                         distance: 14; 
+                         castShadow: true; 
+                         color: #e8664f" 
+                  position="0 8.5 18" 
+                  ></a-entity>
+        
         <a-entity light="type: point;
                          intensity: 3;
                          distance: 14;
-                         castShadow: true"
-                  position="0 8.5 19"
+                         castShadow: true;
+                         color: #ff8f8f"
+                  position="-4 8.5 23.5"
+                  
+                  
+                  
+        ></a-entity>
+        
+        <a-entity light="type: point;
+                         intensity: 3;
+                         distance: 14;
+                         castShadow: true; 
+                         color: #d72828"
+                  position="5 8.5 24"
                   
                   
         ></a-entity>
@@ -392,22 +413,58 @@
         
         
         <a-entity light="type: point;
-                         intensity: 2;
+                         intensity: 1;
                          distance: 10;
                          castShadow: true"
-                  position="0 10 -6"
+                  position="-1 6 -4"
                   >
         </a-entity>
         
          <a-entity light="type: point;
-                         intensity: 0.9;
+                         intensity: 1;
                          distance: 10"
                   position="10 6 -4">
         </a-entity>
         
-
+        <a-entity light="type: point;
+                         intensity: 1;
+                         distance: 10;
+                         castShadow: true"
+                  position="-4 6 -17"
+                  >
+        </a-entity>
         
+        <a-entity light="type: point;
+                         intensity: 1;
+                         distance: 10"
+                  position="10 6 -17">
+        </a-entity>
+
+        <a-entity light="type: point; intensity: 2; 
+                         distance: 20; 
+                         color: #ae6832" 
+                  position="-4.79894 6.91216 -12.40291" 
+                  id="tan light" 
+                  data-brackets-id="360">
+        </a-entity>
+        
+        <a-entity data-brackets-id="424" 
+                  light="type: point; 
+                         intensity: 2; 
+                         distance: 20; 
+                         color: #e8664f" 
+                  position="9.29598 6.11251 -7.76171" 
+                  id="obsidian light">
+        </a-entity>
        
+        <a-entity data-brackets-id="514" 
+                  light="type: point; 
+                         intensity: 2; 
+                         distance: 20; 
+                         color: #e8664f" 
+                  position="1.55657 14.13201 -10.03995" 
+                  id="beige light">
+        </a-entity>
         
         
         <!--- light source for eternal ---> 
@@ -470,7 +527,7 @@
         <!--- light source for void ---> 
         
         <a-entity light="type: point;
-                         intensity: 2;
+                         intensity: 1;
                          distance: 10;
                          castShadow: true"
                   position="30 9 10"
@@ -479,7 +536,7 @@
         ></a-entity>
         
         <a-entity light="type: point;
-                         intensity: 2;
+                         intensity: 1;
                          distance: 10;
                          castShadow: true"
                   position="30 9 24"
@@ -488,7 +545,7 @@
         ></a-entity>
         
         <a-entity light="type: point;
-                         intensity: 2;
+                         intensity: 1;
                          distance: 10;
                          castShadow: true"
                   position="40 9 24"
@@ -497,13 +554,40 @@
         ></a-entity>
         
         <a-entity light="type: point;
-                         intensity: 2;
+                         intensity: 1;
                          distance: 10;
                          castShadow: true"
                   position="40 9 10"
                   
                   
         ></a-entity>
+        
+        <a-entity data-brackets-id="592" 
+                  light="type: point; 
+                         intensity: 2.42; 
+                         distance: 20; 
+                         color: #d72828" 
+                  position="36.0108 9 8.42773" 
+                  id="red light">
+        </a-entity>
+        
+        <a-entity data-brackets-id="671" 
+                  light="type: point; 
+                         intensity: 2.43; 
+                         distance: 20; 
+                         color: #d72828" 
+                  position="36.0108 9 25.47897" 
+                  id="red 2 light">
+        </a-entity>
+        
+        <a-entity data-brackets-id="752" 
+                  light="type: point; 
+                         intensity: 4.06; 
+                         distance: 20; 
+                         color: #fb5b5b" 
+                  position="36.0108 14.30169 18.17713" 
+                  id="red 3 light">
+        </a-entity>
         
         
         
