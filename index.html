@@ -427,11 +427,23 @@
 
         
       
-    s
+    
         <!--- 3D wall text for controls  ---> 
         
         
-        
+        <a-assets>
+             <a-asset-item id="cont" src="controls.gltf" ></a-asset-item>
+         </a-assets>
+ 
+        <a-entity gltf-model="#cont" 
+                  animation-mixer="clip:" 
+                  position="7.45 5 49" 
+                  rotation="0 -90 0"
+                  scale=".5 .5 2"
+                  shadow="cast: true"
+                  id="parallax" 
+            
+           ></a-entity>
         
         
         
@@ -512,7 +524,7 @@
         </a-entity>
         
         
-        <!--- light source for description ---> 
+        <!--- light source for description and control ---> 
         
         <a-entity  light="type: point; 
                           distance: 10; 
@@ -521,6 +533,17 @@
                   position="-5.70035 5 51" 
                   id="p_light">
         </a-entity>
+        
+        <a-entity  light="type: point; 
+                          distance: 10; 
+                          castShadow: true; 
+                          color: #944c4c" 
+                  position="5.70035 5 51" 
+                  id="p_light">
+        </a-entity>
+        
+        
+        
         
         
         <!--- light source for obsidian ---> 
@@ -666,15 +689,7 @@
                   
                   
         ></a-entity>
-        
-        <a-entity light="type: point;
-                         intensity: 1;
-                         distance: 10;
-                         castShadow: true"
-                  position="40 9 10"
-                  
-                  
-        ></a-entity>
+    
         
         <a-entity data-brackets-id="592" 
                   light="type: point; 
