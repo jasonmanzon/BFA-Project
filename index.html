@@ -34,40 +34,10 @@
         
       <a-sky color="#ECECEC"></a-sky>
     
-<!--    <a-entity camera look-controls wasd-controls="acceleration:2000" position="0 1.6 57"></a-entity>-->
+    <a-entity camera look-controls wasd-controls="acceleration:2000" position="0 1.6 57"></a-entity>
        
         
-        
-        
-        
-        
-        
-        <!--- added code for mobile users ---> 
-        
-    <a-entity id="cameraRig" position="0 1.6 0" >
-      <a-entity id="head" position="0 0 0" camera="userHeight:1.6" look-controls="pointerLockEnabled:true">
-        <a-entity position="0.1 -0.1 0"
-          touch-listener
-          teleport-controls=
-            "cameraRig: #cameraRig;
-             teleportOrigin: #head;
-             startEvents:starttouch;
-             endEvents:endtouch;
-             curveShootingSpeed:15;
-             hitCylinderRadius:1;
-             collisionEntities: [ground]"
-          >
-        </a-entity>
-      </a-entity>
-    </a-entity>      
-        
-        
-        
-        
-        
-        
-        
-        
+    
         
         <!--- pedestals ---> 
     <a-assets>
