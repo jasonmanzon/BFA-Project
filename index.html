@@ -34,7 +34,7 @@
         
       <a-sky color="#ECECEC"></a-sky>
     
-    <a-entity camera look-controls wasd-controls="acceleration:2000" position="0 1.6 57"></a-entity>
+    <a-entity camera look-controls wasd-controls="acceleration:2000" position="0 3 62"></a-entity>
        
         
     
@@ -215,11 +215,13 @@
                    normal-texture-repeat="1 1"
                    normal-scale="1 1"
                    depth="0.5" 
-                   height="14.8" 
-                   width="14.5"  
+                   height="15" 
+                   width="25"  
                    position="0 22 39.196" 
                    rotation="0 0 90"
                    shadow="receive: true"></a-box>
+        
+        
         
         <!--- ceiling ---> 
         
@@ -376,6 +378,65 @@
             
            ></a-entity>
         
+        <!--- -Parralax 3D Title  ---> 
+        
+         <a-assets>
+             <a-asset-item id="title" src="parallax_text2.gltf" ></a-asset-item>
+         </a-assets>
+ 
+        <a-entity gltf-model="#title" 
+                  animation-mixer="clip:" 
+                  position="-6 11 39.7" 
+                  rotation="0  0"
+                  scale="2.180 2.216 1"
+                  shadow="cast: true"
+                  id="parallax" 
+            
+           ></a-entity>
+        
+         <a-assets>
+             <a-asset-item id="title" src="parallax_text.gltf" ></a-asset-item>
+         </a-assets>
+ 
+        <a-entity gltf-model="#title" 
+                  animation-mixer="clip:" 
+                  position="6 11 38.7" 
+                  rotation="0 180 0"
+                  scale="2.180 2.216 1"
+                  shadow="cast: true"
+                  id="parallax" 
+            
+           ></a-entity>
+        
+        <!--- 3D wall text for description  ---> 
+        
+        
+        <a-assets>
+             <a-asset-item id="desc" src="description.gltf" ></a-asset-item>
+         </a-assets>
+ 
+        <a-entity gltf-model="#desc" 
+                  animation-mixer="clip:" 
+                  position="-7.45 5 55" 
+                  rotation="0 90 0"
+                  scale=".5 .5 2"
+                  shadow="cast: true"
+                  id="parallax" 
+            
+           ></a-entity>
+
+        
+      
+    s
+        <!--- 3D wall text for controls  ---> 
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -415,7 +476,53 @@
                   
         ></a-entity>
         
-  
+        <!--- light source for parallax title ---> 
+        
+        
+        <a-entity  light="type: point; 
+                          distance: 10; 
+                          castShadow: true; 
+                          color: #7e7ab3" 
+                  position="-5.70035 12.33112 45.03249" 
+                  id="p_light">
+        </a-entity>
+        
+        <a-entity  light="type: point; 
+                          distance: 10; 
+                          castShadow: true; 
+                          color: #944c4c" 
+                  position="5.70035 12.33112 45.03249" 
+                  id="p_light">
+        </a-entity>
+        
+        <a-entity  light="type: point; 
+                          distance: 15; 
+                          castShadow: true; 
+                          color: #7e7ab3" 
+                  position="5.70035 12.33112 37" 
+                  id="p_light2">
+        </a-entity>
+        
+         <a-entity  light="type: point; 
+                          distance: 15; 
+                          castShadow: true; 
+                          color: #944c4c" 
+                  position="-5.70035 12.33112 37" 
+                  id="p_light2">
+        </a-entity>
+        
+        
+        <!--- light source for description ---> 
+        
+        <a-entity  light="type: point; 
+                          distance: 10; 
+                          castShadow: true; 
+                          color: #7e7ab3" 
+                  position="-5.70035 5 51" 
+                  id="p_light">
+        </a-entity>
+        
+        
         <!--- light source for obsidian ---> 
         
         
