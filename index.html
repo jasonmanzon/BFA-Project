@@ -59,9 +59,9 @@
         
     <a-box src="#texturestand" 
            depth="0.5" 
-           height="20" 
-           width="28" 
-           position="1 0 -11" 
+           height="25" 
+           width="23" 
+           position="4 0 -13" 
            rotation="-90  0"
            shadow="cast: true"></a-box>
         
@@ -69,8 +69,8 @@
     <a-box src="#texturestand" 
            depth="0.5" 
            height="20" 
-           width="28"  
-           position="35 0 15" 
+           width="23"  
+           position="34 0 19" 
            rotation="-90 0 90"
            shadow="receive: true"></a-box>
         
@@ -79,8 +79,8 @@
            repeat="2 2"
            depth="0.5" 
            height="20" 
-           width="28"  
-           position="-33 0 15" 
+           width="23"  
+           position="-33 0 17" 
            rotation="-90 0 90" 
            normal-map="#marble-nrm"
            normal-texture-repeat="1 1"
@@ -241,7 +241,7 @@
                    normal-map="#marble-nrm"
                    normal-texture-repeat="1 1"
                    normal-scale="1 1"
-                   color="grey" 
+                   color="grey" s
                    depth="0.5" 
                    height="110" 
                    width="70"  
@@ -257,24 +257,26 @@
         </a-assets>
         
         <a-plane src="#image1" 
-                 height="4" 
-                 width="4" 
+                 height="15" 
+                 width="15" 
                  rotation="0 0 0"
-                 position="-9 2.5 -1.9">
+                 position="-17 8 -12">
         </a-plane>
         
           <a-box src="#texturestand" 
                  depth="0.5" 
-                 height="5" 
-                 width="5" 
-                 position="-9 2.5 -2.3" 
+                 height="16" 
+                 width="16" 
+                 position="-17 8 -12.4" 
                  rotation="0 0 0"
                  shadow="receive: true"></a-box>
         
-        <a-entity light="type: point;
-                         intensity: 1;
-                         distance: 6"
-                  position="-9 2.5 -0.5">
+
+        <a-entity  light="type: point; 
+                   intensity: 1.3; 
+                   distance: 12.29" 
+                   position="-17 8.38046 -7.76421"
+                   id="Obsidian 2D light">
         </a-entity>
         
         
@@ -285,24 +287,24 @@
         </a-assets>
         
         <a-plane src="#image2" 
-                 height="4" 
-                 width="4" 
+                 height="15" 
+                 width="15" 
                  rotation="0 -90 0"
-                 position="25.7 2.5 6">
+                 position="32 8 -2">
         </a-plane>
         
          <a-box src="#texturestand" 
                 depth="0.5" 
-                height="5" 
-                width="5"  
-                position="26 2.5 6" 
+                height="16" 
+                width="16"  
+                position="32.4 8 -2" 
                 rotation="0 90 0"
                 shadow="receive: true"></a-box>
         
-        <a-entity light="type: point;
-                         intensity: 1;
-                         distance: 6"
-                  position="24.2 2.5 6">
+        <a-entity data-brackets-id="550" 
+                  light="type: point; intensity: 1.3; distance: 12.29" 
+                  position="27.47661 7.70776 -1.79945" 
+                  id="ultra 2D light">
         </a-entity>
         
         
@@ -312,24 +314,27 @@
             <img id="image3" src="eternal.jpg">
          </a-assets>
         
-        <a-plane src="#image3" height="4" width="4" rotation="0 90 0"
-                  position="-25 2.5 6">
+        <a-plane src="#image3" 
+                 height="15" 
+                 width="15" 
+                 rotation="0 90 0"
+                 position="-32 8 -4">
         </a-plane>
         
          <a-box src="#texturestand" 
                 depth="0.5" 
-                height="5" 
-                width="5"  
-                position="-25.3 2.5 6" 
+                height="16" 
+                width="16"  
+                position="-32.4 8 -4" 
                 rotation="0 90 0"
                 normal-map="#marble-nrm"
                 shadow="receive: true"
                 ></a-box>
         
-        <a-entity light="type: point;
-                         intensity: 1;
-                         distance: 6"
-                  position="-23.5 2.5 6">
+        <a-entity data-brackets-id="453" 
+                  light="type: point; distance: 12.29; decay: 0.83" 
+                  position="-26.45594 7.91465 -3.73288" 
+                  id="eternal 2D light">
         </a-entity>
   
         <!--- obsidian 3D ---> 
